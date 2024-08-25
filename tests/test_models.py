@@ -218,4 +218,4 @@ class TestProductModel(unittest.TestCase):
         products[0].id = 3.5
         new_id = products[0].id
         self.assertIsNot(new_id, original_id)
-        self.assertRaises(DataValidationError, product.deserialize(products))        
+        self.assertRaises(DataValidationError, product.deserialize(products))
